@@ -1,0 +1,21 @@
+<h2>101336759-Labtest2-COMP3133</h2><hr />
+
+<div *ngIf="mission">
+    <div> 
+      <label><b>Mission Name: </b></label> {{mission.mission_name}}
+   </div>
+   <br>
+   <div>
+    <label><b>Launch Year </b></label> {{mission.launch_year}}
+   </div>
+   <br>
+   <div>
+    <label><b>Details</b></label> {{mission.details}}
+   </div>
+   <br>
+   <div>
+    <label><b>Mission patch: </b></label> <img src="{{mission.mission_patch_small}}" alt="">
+   </div>
+   <br>
+</div><br><br>
+   <button (click)=" backToMissionList()" class="btn btn-primary">Back to Mission List</button><br>
